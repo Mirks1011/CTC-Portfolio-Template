@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23060608' stroke='%236a8cff' stroke-width='1.5'/%3E%3Ctext x='16' y='22' font-family='Orbitron' font-size='15' font-weight='700' fill='%23eeeff5' text-anchor='middle'%3EJD%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
@@ -35,9 +36,9 @@
         <span class="nav__logo">JD</span>
         <div class="nav__links">
           <a href="#about" class="nav__link">About</a>
+          <a href="#experience" class="nav__link">Experience</a>
           <a href="#projects" class="nav__link">Work</a>
           <a href="#skills" class="nav__link">Stack</a>
-          <a href="#experience" class="nav__link">Log</a>
           <a href="#contact" class="nav__link">Reach</a>
         </div>
       </div>
@@ -47,41 +48,65 @@
       <!-- ═══ HERO ═══ -->
       <section id="hero" class="section section--hero">
         <div class="hero__robot" aria-hidden="true">
-          <svg width="130" height="170" viewBox="0 0 130 170" fill="none">
+          <svg width="130" height="195" viewBox="0 0 130 195">
             <defs>
               <linearGradient id="rg" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stop-color="#ffffff"/>
-                <stop offset="30%" stop-color="#eef0f6"/>
-                <stop offset="100%" stop-color="#c8cad6"/>
+                <stop offset="25%" stop-color="#f0f2f8"/>
+                <stop offset="100%" stop-color="#b8bccf"/>
               </linearGradient>
-              <linearGradient id="rs" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
-                <stop offset="30%" stop-color="#ffffff" stop-opacity="0.05"/>
+              <linearGradient id="rgh" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+                <stop offset="40%" stop-color="#ffffff" stop-opacity="0.05"/>
                 <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
               </linearGradient>
+              <filter id="rshadow" x="-50%" y="-50%" width="200%" height="200%">
+                <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.5"/>
+              </filter>
             </defs>
-            <g opacity="0.85">
-              <line x1="65" y1="6" x2="65" y2="28" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-linecap="round"/>
-              <circle cx="65" cy="4" r="7" fill="rgba(106,140,255,0.1)"/>
-              <circle cx="65" cy="4" r="3" fill="rgba(106,140,255,0.8)"/>
-              <rect x="16" y="28" width="98" height="72" rx="14" fill="rgba(0,0,0,0.08)" transform="translate(2,2)"/>
-              <rect x="16" y="28" width="98" height="72" rx="14" fill="url(#rg)"/>
-              <rect x="16" y="28" width="98" height="72" rx="14" fill="url(#rs)" opacity="0.4"/>
-              <rect x="28" y="44" width="74" height="36" rx="8" fill="#080810"/>
-              <rect x="28" y="44" width="74" height="36" rx="8" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
-              <circle cx="48" cy="62" r="4.5" fill="#6a8cff" opacity="0.85"/>
-              <circle cx="82" cy="62" r="4.5" fill="#6a8cff" opacity="0.85"/>
-              <circle cx="48" cy="62" r="1.8" fill="#fff" opacity="0.6"/>
-              <circle cx="82" cy="62" r="1.8" fill="#fff" opacity="0.6"/>
-              <line x1="50" y1="72" x2="80" y2="72" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" stroke-linecap="round"/>
-              <rect x="26" y="106" width="78" height="46" rx="10" fill="url(#rg)"/>
-              <rect x="26" y="106" width="78" height="46" rx="10" fill="url(#rs)" opacity="0.25"/>
-              <line x1="38" y1="120" x2="92" y2="120" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
-              <circle cx="65" cy="130" r="3.5" fill="#6a8cff" opacity="0.25"/>
-              <rect x="6" y="114" width="17" height="7" rx="3.5" fill="url(#rg)" opacity="0.8"/>
-              <rect x="107" y="114" width="17" height="7" rx="3.5" fill="url(#rg)" opacity="0.8"/>
-              <rect x="36" y="156" width="18" height="9" rx="4.5" fill="url(#rg)" opacity="0.7"/>
-              <rect x="76" y="156" width="18" height="9" rx="4.5" fill="url(#rg)" opacity="0.7"/>
+            <ellipse cx="65" cy="188" rx="38" ry="5" fill="rgba(0,0,0,0.35)" filter="url(#rshadow)"/>
+            <g>
+              <line x1="65" y1="6" x2="65" y2="32" stroke="rgba(200,210,255,0.15)" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="65" cy="4" r="9" fill="rgba(106,140,255,0.06)"/>
+              <circle cx="65" cy="4" r="3.5" fill="#6a8cff" opacity="0.6"/>
+              <circle cx="65" cy="4" r="1.5" fill="#fff" opacity="0.5"/>
+              <rect x="50" y="58" width="30" height="14" rx="4" fill="url(#rg)"/>
+              <rect x="50" y="58" width="30" height="14" rx="4" fill="url(#rgh)" opacity="0.3"/>
+              <rect x="14" y="18" width="102" height="60" rx="20" fill="rgba(0,0,0,0.1)"/>
+              <rect x="14" y="14" width="102" height="60" rx="20" fill="url(#rg)"/>
+              <rect x="14" y="14" width="102" height="60" rx="20" fill="url(#rgh)" opacity="0.35"/>
+              <rect x="14" y="14" width="102" height="60" rx="20" stroke="rgba(255,255,255,0.08)" stroke-width="0.5" fill="none"/>
+              <rect x="27" y="28" width="76" height="34" rx="9" fill="#040408" transform="translate(0,1)"/>
+              <rect x="27" y="28" width="76" height="34" rx="9" fill="#07070e"/>
+              <rect x="27" y="28" width="76" height="34" rx="9" stroke="rgba(106,140,255,0.08)" stroke-width="0.5" fill="none"/>
+              <line x1="30" y1="36" x2="100" y2="36" stroke="rgba(106,140,255,0.04)" stroke-width="0.5"/>
+              <line x1="30" y1="42" x2="100" y2="42" stroke="rgba(106,140,255,0.03)" stroke-width="0.5"/>
+              <line x1="30" y1="48" x2="100" y2="48" stroke="rgba(106,140,255,0.03)" stroke-width="0.5"/>
+              <line x1="30" y1="54" x2="100" y2="54" stroke="rgba(106,140,255,0.04)" stroke-width="0.5"/>
+              <circle cx="46" cy="47" r="5.5" fill="#6a8cff" opacity="0.75"/>
+              <circle cx="46" cy="47" r="5.5" fill="url(#rgh)" opacity="0.15"/>
+              <circle cx="46" cy="47" r="2" fill="#fff" opacity="0.5"/>
+              <circle cx="84" cy="47" r="5.5" fill="#6a8cff" opacity="0.75"/>
+              <circle cx="84" cy="47" r="5.5" fill="url(#rgh)" opacity="0.15"/>
+              <circle cx="84" cy="47" r="2" fill="#fff" opacity="0.5"/>
+              <line x1="36" y1="55" x2="48" y2="55" stroke="rgba(106,140,255,0.15)" stroke-width="1" stroke-linecap="round"/>
+              <rect x="88" y="53" width="10" height="3" rx="1" fill="rgba(106,140,255,0.1)"/>
+              <rect x="28" y="80" width="74" height="56" rx="14" fill="rgba(0,0,0,0.08)" transform="translate(2,2)"/>
+              <rect x="28" y="78" width="74" height="56" rx="14" fill="url(#rg)"/>
+              <rect x="28" y="78" width="74" height="56" rx="14" fill="url(#rgh)" opacity="0.25"/>
+              <line x1="38" y1="112" x2="92" y2="112" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+              <circle cx="65" cy="93" r="4" fill="#6a8cff" opacity="0.2"/>
+              <circle cx="65" cy="93" r="2.5" fill="#6a8cff" opacity="0.35"/>
+              <rect x="6" y="82" width="14" height="32" rx="7" fill="url(#rg)" opacity="0.85"/>
+              <rect x="6" y="82" width="14" height="32" rx="7" fill="url(#rgh)" opacity="0.15"/>
+              <circle cx="13" cy="114" r="6" fill="url(#rg)" opacity="0.8"/>
+              <rect x="110" y="82" width="14" height="32" rx="7" fill="url(#rg)" opacity="0.85"/>
+              <rect x="110" y="82" width="14" height="32" rx="7" fill="url(#rgh)" opacity="0.15"/>
+              <circle cx="117" cy="114" r="6" fill="url(#rg)" opacity="0.8"/>
+              <rect x="40" y="138" width="18" height="16" rx="6" fill="url(#rg)" opacity="0.8"/>
+              <rect x="72" y="138" width="18" height="16" rx="6" fill="url(#rg)" opacity="0.8"/>
+              <rect x="34" y="156" width="28" height="10" rx="5" fill="url(#rg)" opacity="0.75"/>
+              <rect x="68" y="156" width="28" height="10" rx="5" fill="url(#rg)" opacity="0.75"/>
             </g>
           </svg>
         </div>
@@ -106,13 +131,40 @@
       <section id="about" class="section section--glass" data-reveal>
         <div class="section__inner">
           <div class="glass-card">
-            <div class="glass-card__header">
-              <span class="glass-card__number">01</span>
-              <h2 class="glass-card__title">About</h2>
-            </div>
-            <div class="prose">
-              <p>I'm a computer science student at the <strong>University of the Philippines</strong>, building software that scales. My focus is on cloud infrastructure, distributed systems, and developer tooling — the kind of work that makes other engineers more productive.</p>
-              <p>Outside of code, I'm usually reading about system design, contributing to open source projects, or experimenting with homelab setups. I believe great infrastructure is invisible: when everything just works, you're free to build what matters.</p>
+            <div class="about-card">
+              <div class="about-card__content">
+                <div class="glass-card__header">
+                  <span class="glass-card__number">01</span>
+                  <h2 class="glass-card__title">About</h2>
+                </div>
+                <div class="prose">
+                  <p>I'm a computer science student at the <strong>University of the Philippines</strong>, building software that scales. My focus is on cloud infrastructure, distributed systems, and developer tooling — the kind of work that makes other engineers more productive.</p>
+                  <p>Outside of code, I'm usually reading about system design, contributing to open source projects, or experimenting with homelab setups. I believe great infrastructure is invisible: when everything just works, you're free to build what matters.</p>
+                </div>
+              </div>
+              <div class="about-card__image">
+                <svg viewBox="0 0 220 220" fill="none">
+                  <defs>
+                    <linearGradient id="pp-bg" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#12141a"/>
+                      <stop offset="100%" stop-color="#08080c"/>
+                    </linearGradient>
+                    <linearGradient id="pp-border" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="rgba(106,140,255,0.5)"/>
+                      <stop offset="50%" stop-color="rgba(106,140,255,0.15)"/>
+                      <stop offset="100%" stop-color="rgba(255,255,255,0.08)"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="110" cy="110" r="100" fill="url(#pp-bg)" stroke="url(#pp-border)" stroke-width="1.5"/>
+                  <circle cx="110" cy="110" r="100" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+                  <line x1="10" y1="110" x2="210" y2="110" stroke="rgba(106,140,255,0.06)" stroke-width="0.5" stroke-dasharray="3 4"/>
+                  <line x1="110" y1="10" x2="110" y2="210" stroke="rgba(106,140,255,0.06)" stroke-width="0.5" stroke-dasharray="3 4"/>
+                  <circle cx="110" cy="110" r="48" fill="rgba(255,255,255,0.015)" stroke="rgba(106,140,255,0.12)" stroke-width="0.5"/>
+                  <text x="110" y="118" font-family="Orbitron" font-size="58" font-weight="700" fill="rgba(238,238,244,0.15)" text-anchor="middle" letter-spacing="0.08">JD</text>
+                  <circle cx="110" cy="110" r="4" fill="rgba(106,140,255,0.2)"/>
+                  <circle cx="110" cy="110" r="1.5" fill="rgba(106,140,255,0.35)"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -120,17 +172,80 @@
 
       <div class="glass-divider"></div>
 
-      <!-- ═══ PROJECTS (02) ═══ -->
-      <section id="projects" class="section section--glass" data-reveal>
+      <!-- ═══ EXPERIENCE (02) ═══ -->
+      <section id="experience" class="section section--glass" data-reveal>
         <div class="section__inner">
           <div class="glass-card">
             <div class="glass-card__header">
               <span class="glass-card__number">02</span>
+              <h2 class="glass-card__title">Experience</h2>
+            </div>
+            <p class="glass-card__lede">Education, work, and events.</p>
+            <div class="timeline">
+              <div class="timeline__item">
+                <div class="timeline__item__head">
+                  <span class="timeline__item__date">2024</span>
+                  <h3 class="timeline__item__title">Software Engineering Intern</h3>
+                </div>
+                <p class="timeline__item__org">Vercel</p>
+                <p class="timeline__item__desc">Built internal tooling for deployment pipeline monitoring. Reduced mean-time-to-detect by 40% with custom alert routing.</p>
+              </div>
+              <div class="timeline__item">
+                <div class="timeline__item__head">
+                  <span class="timeline__item__date">2023–24</span>
+                  <h3 class="timeline__item__title">CS Research Assistant</h3>
+                </div>
+                <p class="timeline__item__org">University of the Philippines</p>
+                <p class="timeline__item__desc">Researched distributed consensus algorithms in geo-distributed environments. Published findings on latency optimization in Raft-based systems.</p>
+              </div>
+              <div class="timeline__item">
+                <div class="timeline__item__head">
+                  <span class="timeline__item__date">2023</span>
+                  <h3 class="timeline__item__title">Open Source Contributor</h3>
+                </div>
+                <p class="timeline__item__org">Kubernetes · SIG-Instrumentation</p>
+                <p class="timeline__item__desc">Built a custom metrics dashboard exporter and improved documentation for the Kubernetes metrics API.</p>
+              </div>
+              <div class="timeline__item">
+                <div class="timeline__item__head">
+                  <span class="timeline__item__date">2023</span>
+                  <h3 class="timeline__item__title">Hackathon Winner</h3>
+                </div>
+                <p class="timeline__item__org">HackMIT</p>
+                <p class="timeline__item__desc">Built a real-time collaborative debugging tool using WebRTC and CRDTs. Won "Best Infrastructure" and "People's Choice" awards.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="glass-divider"></div>
+
+      <!-- ═══ PROJECTS (03) ═══ -->
+      <section id="projects" class="section section--glass" data-reveal>
+        <div class="section__inner">
+          <div class="glass-card">
+            <div class="glass-card__header">
+              <span class="glass-card__number">03</span>
               <h2 class="glass-card__title">Projects</h2>
             </div>
             <p class="glass-card__lede">Things I've built — from quick experiments to longer efforts.</p>
             <div class="project-grid">
               <article class="project-card">
+                <div class="project-card__media">
+                  <svg viewBox="0 0 260 60" fill="none">
+                    <rect x="10" y="8" width="240" height="1" rx="0.5" stroke="rgba(106,140,255,0.08)" stroke-width="0.5"/>
+                    <rect x="10" y="10" width="60" height="10" rx="3" fill="rgba(106,140,255,0.12)"/>
+                    <rect x="80" y="10" width="90" height="10" rx="3" fill="rgba(106,140,255,0.08)"/>
+                    <rect x="10" y="24" width="110" height="10" rx="3" fill="rgba(106,140,255,0.15)"/>
+                    <rect x="130" y="24" width="70" height="10" rx="3" fill="rgba(106,140,255,0.06)"/>
+                    <rect x="10" y="38" width="40" height="10" rx="3" fill="rgba(106,140,255,0.10)"/>
+                    <rect x="60" y="38" width="140" height="10" rx="3" fill="rgba(106,140,255,0.14)"/>
+                    <circle cx="3" cy="15" r="2" fill="rgba(106,140,255,0.08)"/>
+                    <circle cx="3" cy="29" r="2" fill="rgba(106,140,255,0.08)"/>
+                    <circle cx="3" cy="43" r="2" fill="rgba(106,140,255,0.08)"/>
+                  </svg>
+                </div>
                 <div class="project-card__top">
                   <h3 class="project-card__title">Kronos</h3>
                   <div class="project-card__links">
@@ -146,6 +261,22 @@
                 </div>
               </article>
               <article class="project-card">
+                <div class="project-card__media">
+                  <svg viewBox="0 0 260 60" fill="none">
+                    <rect x="80" y="6" width="100" height="20" rx="4" stroke="rgba(106,140,255,0.15)" stroke-width="1" fill="rgba(106,140,255,0.03)"/>
+                    <path d="M100 16V12a10 10 0 0 1 20 0v4" stroke="rgba(106,140,255,0.2)" stroke-width="1.2" stroke-linecap="round"/>
+                    <circle cx="130" cy="16" r="4" fill="rgba(106,140,255,0.12)"/>
+                    <circle cx="130" cy="16" r="1.5" fill="rgba(106,140,255,0.2)"/>
+                    <line x1="80" y1="26" x2="80" y2="32" stroke="rgba(106,140,255,0.08)" stroke-width="0.5"/>
+                    <line x1="180" y1="26" x2="180" y2="32" stroke="rgba(106,140,255,0.08)" stroke-width="0.5"/>
+                    <line x1="90" y1="38" x2="90" y2="52" stroke="rgba(106,140,255,0.06)" stroke-width="0.5"/>
+                    <line x1="130" y1="38" x2="130" y2="52" stroke="rgba(106,140,255,0.06)" stroke-width="0.5"/>
+                    <line x1="170" y1="38" x2="170" y2="52" stroke="rgba(106,140,255,0.06)" stroke-width="0.5"/>
+                    <rect x="85" y="38" width="10" height="14" rx="2" fill="rgba(106,140,255,0.08)"/>
+                    <rect x="125" y="42" width="10" height="10" rx="2" fill="rgba(106,140,255,0.12)"/>
+                    <rect x="165" y="40" width="10" height="12" rx="2" fill="rgba(106,140,255,0.06)"/>
+                  </svg>
+                </div>
                 <div class="project-card__top">
                   <h3 class="project-card__title">Envault</h3>
                   <div class="project-card__links">
@@ -161,6 +292,23 @@
                 </div>
               </article>
               <article class="project-card">
+                <div class="project-card__media">
+                  <svg viewBox="0 0 260 60" fill="none">
+                    <circle cx="50" cy="30" r="14" stroke="rgba(106,140,255,0.12)" stroke-width="0.8" fill="rgba(106,140,255,0.03)"/>
+                    <circle cx="50" cy="30" r="4" fill="rgba(106,140,255,0.1)"/>
+                    <circle cx="130" cy="16" r="10" stroke="rgba(106,140,255,0.15)" stroke-width="0.8" fill="rgba(106,140,255,0.04)"/>
+                    <circle cx="130" cy="16" r="3" fill="rgba(106,140,255,0.12)"/>
+                    <circle cx="130" cy="44" r="10" stroke="rgba(106,140,255,0.10)" stroke-width="0.8" fill="rgba(106,140,255,0.02)"/>
+                    <circle cx="130" cy="44" r="3" fill="rgba(106,140,255,0.08)"/>
+                    <circle cx="200" cy="30" r="12" stroke="rgba(106,140,255,0.13)" stroke-width="0.8" fill="rgba(106,140,255,0.03)"/>
+                    <circle cx="200" cy="30" r="3.5" fill="rgba(106,140,255,0.1)"/>
+                    <line x1="62" y1="24" x2="122" y2="18" stroke="rgba(106,140,255,0.08)" stroke-width="0.5"/>
+                    <line x1="62" y1="36" x2="122" y2="42" stroke="rgba(106,140,255,0.06)" stroke-width="0.5"/>
+                    <line x1="138" y1="22" x2="190" y2="28" stroke="rgba(106,140,255,0.07)" stroke-width="0.5"/>
+                    <line x1="138" y1="38" x2="190" y2="32" stroke="rgba(106,140,255,0.05)" stroke-width="0.5"/>
+                    <line x1="138" y1="16" x2="138" y2="44" stroke="rgba(106,140,255,0.04)" stroke-width="0.3" stroke-dasharray="2 3"/>
+                  </svg>
+                </div>
                 <div class="project-card__top">
                   <h3 class="project-card__title">Stratos</h3>
                   <div class="project-card__links">
@@ -176,6 +324,21 @@
                 </div>
               </article>
               <article class="project-card">
+                <div class="project-card__media">
+                  <svg viewBox="0 0 260 60" fill="none">
+                    <rect x="20" y="8" width="80" height="5" rx="2.5" fill="rgba(106,140,255,0.15)"/>
+                    <rect x="20" y="16" width="120" height="3" rx="1.5" fill="rgba(106,140,255,0.06)"/>
+                    <rect x="20" y="22" width="100" height="3" rx="1.5" fill="rgba(106,140,255,0.05)"/>
+                    <rect x="20" y="28" width="140" height="3" rx="1.5" fill="rgba(106,140,255,0.06)"/>
+                    <rect x="20" y="34" width="90" height="3" rx="1.5" fill="rgba(106,140,255,0.05)"/>
+                    <line x1="20" y1="42" x2="240" y2="42" stroke="rgba(106,140,255,0.06)" stroke-width="0.5"/>
+                    <rect x="20" y="46" width="60" height="3" rx="1.5" fill="rgba(106,140,255,0.05)"/>
+                    <rect x="90" y="46" width="110" height="3" rx="1.5" fill="rgba(106,140,255,0.06)"/>
+                    <rect x="20" y="52" width="80" height="3" rx="1.5" fill="rgba(106,140,255,0.04)"/>
+                    <line x1="0" y1="6" x2="0" y2="56" stroke="rgba(106,140,255,0.04)" stroke-width="0.5"/>
+                    <line x1="260" y1="6" x2="260" y2="56" stroke="rgba(106,140,255,0.04)" stroke-width="0.5"/>
+                  </svg>
+                </div>
                 <div class="project-card__top">
                   <h3 class="project-card__title">Aether</h3>
                   <div class="project-card__links">
@@ -197,97 +360,57 @@
 
       <div class="glass-divider"></div>
 
-      <!-- ═══ SKILLS (03) ═══ -->
+      <!-- ═══ SKILLS (04) ═══ -->
       <section id="skills" class="section section--glass" data-reveal>
         <div class="section__inner">
           <div class="glass-card">
             <div class="glass-card__header">
-              <span class="glass-card__number">03</span>
+              <span class="glass-card__number">04</span>
               <h2 class="glass-card__title">Stack</h2>
             </div>
             <p class="glass-card__lede">Technologies and tools I work with.</p>
             <div class="skills-wrapper">
-              <div class="skill-card">
-                <h3 class="skill-card__title">Languages</h3>
+              <div class="skill-card skill-card--lang">
+                <h3 class="skill-card__title">
+                  <svg class="skill-card__icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 4 2 9 6 14"/><polyline points="12 4 16 9 12 14"/></svg>
+                  Languages
+                </h3>
                 <div class="skill-card__items">
-                  <span class="tag">Go</span>
-                  <span class="tag">Rust</span>
-                  <span class="tag">Python</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Java</span>
-                  <span class="tag">SQL</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><path d="M8 9c0 0 1-3 4-3s4 3 4 3c0 2-1 3-1 3s1 1 1 3c0 0-1 3-4 3s-4-3-4-3c0-2 1-3 1-3s-1-1-1-3z" stroke="currentColor" stroke-width="1.6" opacity="0.5"/><circle cx="12" cy="9" r="1.5" fill="currentColor" opacity="0.35"/><circle cx="12" cy="15" r="1.5" fill="currentColor" opacity="0.35"/></svg>Go</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><circle cx="12" cy="12" r="5.5" stroke="currentColor" stroke-width="1.6" opacity="0.5"/><circle cx="12" cy="12" r="2.5" fill="currentColor" opacity="0.35"/></svg>Rust</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><path d="M12 2l-3 8l-7 1l5.5 5.5L6 22l6-4l6 4l-1.5-5.5L22 11l-7-1l-3-8z" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><circle cx="12" cy="6" r="1.5" fill="currentColor" opacity="0.35"/></svg>Python</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><line x1="9" y1="7" x2="9" y2="17" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><line x1="9" y1="12" x2="15" y2="12" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><line x1="15" y1="7" x2="15" y2="17" stroke="currentColor" stroke-width="1.8" opacity="0.35"/></svg>TypeScript</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><line x1="12" y1="7" x2="12" y2="17" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><circle cx="12" cy="12" r="2" fill="currentColor" opacity="0.2"/></svg>Java</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="8" rx="8" ry="3" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><path d="M4 8v7c0 1.66 3.58 3 8 3s8-1.34 8-3V8" stroke="currentColor" stroke-width="1.6" opacity="0.5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3" stroke="currentColor" stroke-width="1.6" opacity="0.35"/></svg>SQL</span>
                 </div>
               </div>
-              <div class="skill-card">
-                <h3 class="skill-card__title">Infrastructure</h3>
+              <div class="skill-card skill-card--infra">
+                <h3 class="skill-card__title">
+                  <svg class="skill-card__icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="14" height="12" rx="2"/><line x1="5" y1="3" x2="5" y2="15" stroke-dasharray="2 1"/></svg>
+                  Infrastructure
+                </h3>
                 <div class="skill-card__items">
-                  <span class="tag">Kubernetes</span>
-                  <span class="tag">AWS</span>
-                  <span class="tag">Docker</span>
-                  <span class="tag">Terraform</span>
-                  <span class="tag">Linux</span>
-                  <span class="tag">GitHub Actions</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><line x1="12" y1="3" x2="12" y2="21" stroke="currentColor" stroke-width="1.6" opacity="0.35"/><line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.6" opacity="0.35"/><line x1="4.8" y1="4.8" x2="19.2" y2="19.2" stroke="currentColor" stroke-width="1.6" opacity="0.25"/><line x1="19.2" y1="4.8" x2="4.8" y2="19.2" stroke="currentColor" stroke-width="1.6" opacity="0.25"/></svg>Kubernetes</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" stroke="currentColor" stroke-width="1.6" opacity="0.5"/></svg>AWS</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="14" rx="3" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><path d="M10 12c0 0 1-3 4-3s4 3 4 3c0 0-1 3-4 3s-4-3-4-3z" stroke="currentColor" stroke-width="1.6" opacity="0.5"/></svg>Docker</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><polygon points="12 2 22 7 22 17 12 22 2 17 2 7" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><line x1="12" y1="2" x2="12" y2="22" stroke="currentColor" stroke-width="1.6" opacity="0.25"/></svg>Terraform</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><path d="M4 17l6-6l-6-6" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><line x1="12" y1="19" x2="20" y2="19" stroke="currentColor" stroke-width="1.8" opacity="0.4"/></svg>Linux</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><polyline points="7 9 10 12 7 15" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><line x1="12" y1="15" x2="17" y2="15" stroke="currentColor" stroke-width="1.8" opacity="0.35"/></svg>GitHub Actions</span>
                 </div>
               </div>
-              <div class="skill-card">
-                <h3 class="skill-card__title">Frameworks</h3>
+              <div class="skill-card skill-card--fw">
+                <h3 class="skill-card__title">
+                  <svg class="skill-card__icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2L2 7l7 5l7-5L9 2z"/><path d="M2 12l7 5l7-5"/></svg>
+                  Frameworks
+                </h3>
                 <div class="skill-card__items">
-                  <span class="tag">React</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">FastAPI</span>
-                  <span class="tag">PostgreSQL</span>
-                  <span class="tag">Redis</span>
-                  <span class="tag">Prometheus</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="12" rx="8" ry="3" stroke="currentColor" stroke-width="1.6" opacity="0.3"/><ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="currentColor" stroke-width="1.6" opacity="0.3"/><circle cx="12" cy="12" r="2" fill="currentColor" opacity="0.2"/></svg>React</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><polygon points="12 2 22 7 22 17 12 22 2 17 2 7" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><circle cx="12" cy="12" r="3" fill="currentColor" opacity="0.15"/></svg>Node.js</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8l10-12h-9l1-8z" stroke="currentColor" stroke-width="1.6" opacity="0.5"/></svg>FastAPI</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="7" rx="8" ry="3" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><path d="M4 7v9c0 1.66 3.58 3 8 3s8-1.34 8-3V7" stroke="currentColor" stroke-width="1.6" opacity="0.5"/><path d="M6 16c2 0 4-1 8-3" stroke="currentColor" stroke-width="1.6" opacity="0.3"/></svg>PostgreSQL</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><path d="M14 5l-8 6h5l-3 8l10-8h-5l1-6z" stroke="currentColor" stroke-width="1.6" opacity="0.5"/></svg>Redis</span>
+                  <span class="skill-badge"><svg class="skill-badge__icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6" opacity="0.4"/><path d="M7 14c2 0 3-2 5-2s3 2 5 2" stroke="currentColor" stroke-width="1.8" opacity="0.5"/><circle cx="9" cy="10" r="1" fill="currentColor" opacity="0.3"/><circle cx="15" cy="10" r="1" fill="currentColor" opacity="0.3"/></svg>Prometheus</span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="glass-divider"></div>
-
-      <!-- ═══ EXPERIENCE (04) ═══ -->
-      <section id="experience" class="section section--glass" data-reveal>
-        <div class="section__inner">
-          <div class="glass-card">
-            <div class="glass-card__header">
-              <span class="glass-card__number">04</span>
-              <h2 class="glass-card__title">Log</h2>
-            </div>
-            <p class="glass-card__lede">Education, work, and events.</p>
-            <div class="timeline">
-              <div class="timeline__item">
-                <div class="timeline__item__head">
-                  <span class="timeline__item__date">2024</span>
-                  <h3 class="timeline__item__title">Software Engineering Intern</h3>
-                </div>
-                <p class="timeline__item__org">Vercel</p>
-                <p class="timeline__item__desc">Built internal tooling for deployment pipeline monitoring. Reduced mean-time-to-detect by 40% with custom alert routing. Contributed to the Next.js core team.</p>
-              </div>
-              <div class="timeline__item">
-                <div class="timeline__item__head">
-                  <span class="timeline__item__date">2023–24</span>
-                  <h3 class="timeline__item__title">CS Research Assistant</h3>
-                </div>
-                <p class="timeline__item__org">University of the Philippines</p>
-                <p class="timeline__item__desc">Researched distributed consensus algorithms in geo-distributed environments. Published findings on latency optimization in Raft-based systems.</p>
-              </div>
-              <div class="timeline__item">
-                <div class="timeline__item__head">
-                  <span class="timeline__item__date">2023</span>
-                  <h3 class="timeline__item__title">Open Source Contributor</h3>
-                </div>
-                <p class="timeline__item__org">Kubernetes · SIG-Instrumentation</p>
-                <p class="timeline__item__desc">Built a custom metrics dashboard exporter and improved documentation for the Kubernetes metrics API across multiple release cycles.</p>
-              </div>
-              <div class="timeline__item">
-                <div class="timeline__item__head">
-                  <span class="timeline__item__date">2023</span>
-                  <h3 class="timeline__item__title">Hackathon Winner</h3>
-                </div>
-                <p class="timeline__item__org">HackMIT</p>
-                <p class="timeline__item__desc">Built a real-time collaborative debugging tool using WebRTC and CRDTs. Won "Best Infrastructure" and "People's Choice" awards.</p>
               </div>
             </div>
           </div>
